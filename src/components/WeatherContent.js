@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View, ActivityIndicator} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const API_KEY = '3debf7779afd8c77a50020e4d1f4a357';
+const API_KEY = {YOUR_API_KEY};
 
 const WeatherContent = () => {
   const [days, setDays] = useState([]);
