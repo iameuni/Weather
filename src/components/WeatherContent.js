@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {StyleSheet, Text, View, ActivityIndicator} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const API_KEY = {YOUR_API_KEY};
+const API_KEY = '3debf7779afd8c77a50020e4d1f4a357';
 
 const WeatherContent = () => {
   const [days, setDays] = useState([]);
@@ -22,7 +22,7 @@ const WeatherContent = () => {
     const json = await response.json();
     setDays(json);
     weatherID = json.weather[0].id;
-    weatherID = 800 == weatherID
+    weatherID == 800
       ? setWeather(weatherGroup[0])
       : setWeather(weatherGroup[parseInt(weatherID / 100)]);
   };
